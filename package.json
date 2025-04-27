@@ -1,0 +1,33 @@
+{
+  "name": "gitai",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "commit:fix": "node src/main.js commit --fix-commit",
+    "commit:check": "node src/main.js commit --spell-check",
+    "commit": "node src/main.js commit --message",
+    "build": "pkg . --targets node18-macos-x64,node18-linux-x64,node18-win-x64 --output dist/gitai"
+  },
+  "bin": {
+    "gitai": "src/main.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.5.0",
+    "inquirer": "^9.3.7",
+    "simple-git": "^3.27.0"
+  },
+  "pkg": {
+    "assets": [
+      "assets/**/*"
+    ],
+    "targets": [
+      "node18-macos-x64",
+      "node18-linux-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
