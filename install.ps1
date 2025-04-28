@@ -12,7 +12,7 @@ if (-Not (Get-Command node -ErrorAction SilentlyContinue)) {
 Write-Host "✅ Node.js is installed"
 
 # Install the package globally
-Write-Host "📦 Installing GitAI globally..."
+Write-Host "📦 Installing GitAI globally...."
 npm install -g git-commit-cli-helper
 
 Write-Host "✅ GitAI installed successfully!"
