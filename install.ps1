@@ -2,31 +2,19 @@
 
 $ErrorActionPreference = "Stop"
 
-$repoUrl = "https://yourdomain.com/gitai"  # 🔥 Replace this with your real URL
-$binaryName = "gitai.exe"
-$tempPath = "$env:TEMP\$binaryName"
-$installPath = "$env:ProgramFiles\GitAI"
-
-Write-Host "🔍 Detecting your system..."
-
-if (-Not (Test-Path $installPath)) {
-    Write-Host "📁 Creating install directory at $installPath"
-    New-Item -ItemType Directory -Path $installPath | Out-Null
+# Check if Node.js is installed
+if (-Not (Get-Command node -ErrorAction SilentlyContinue)) {
+    Write-Host "❌ Node.js is not installed. Please install Node.js first."
+    Write-Host "Visit https://nodejs.org/ to download and install Node.js"
+    exit 1
 }
 
-Write-Host "🌐 Downloading $binaryName..."
-Invoke-WebRequest -Uri "$repoUrl/$binaryName" -OutFile $tempPath
+Write-Host "✅ Node.js is installed"
 
-Write-Host "🚀 Installing to $installPath..."
-Move-Item -Force -Path $tempPath -Destination "$installPath\$binaryName"
+# Install the package globally
+Write-Host "📦 Installing GitAI globally..."
+npm install -g git-commit-cli-helper
 
-# Adding to PATH (for current user)
-$envPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User)
-if ($envPath -notlike "*$installPath*") {
-    Write-Host "🛠️  Adding $installPath to PATH..."
-    [System.Environment]::SetEnvironmentVariable("Path", "$envPath;$installPath", [System.EnvironmentVariableTarget]::User)
-}
-
-Write-Host "✅ Installation complete!"
+Write-Host "✅ GitAI installed successfully!"
 Write-Host ""
-Write-Host "👉 You can now run 'gitai' from any terminal (restart terminal if needed)."
+Write-Host "👉 You can now run 'gitai' from anywhere!"

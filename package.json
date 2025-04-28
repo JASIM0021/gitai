@@ -1,8 +1,28 @@
 {
-  "name": "git-commit-cli-helper",
-  "version": "1.0.1",
+  "name": "gitcliai",
+  "version": "1.1.2",
   "type": "module",
   "main": "src/main.js",
+  "description": "GitAI - AI-powered Git assistant that helps write better commit messages and automate Git workflows",
+  "author": "SK Jasimuddin (skjasimuddin9064@gmail.com)",
+  "homepage": "https://github.com/yourusername/git-commit-cli-helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/git-commit-cli-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/git-commit-cli-helper/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "cli",
+    "ai",
+    "commit",
+    "productivity",
+    "developer-tools",
+    "automation"
+  ],
   "scripts": {
     "start": "node src/main.js",
     "commit:fix": "node src/main.js commit --fix-commit",
@@ -39,5 +59,8 @@
   },
   "devDependencies": {
     "esbuild-plugin-alias": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
