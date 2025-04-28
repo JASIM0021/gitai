@@ -34,7 +34,7 @@ export async function generateCommitMessage(model, apiKey, gitDiff) {
     const provider = AI_PROVIDERS[model];
     if (!provider) throw new Error('Unsupported model');
 
-    const prompt = `Generate a clear, concise git commit message in imperative mood (e.g., "Fix bug" not "Fixed bug") for these changes. Focus on what changed and why, not how. Use conventional commit style if appropriate.\n\nGit diff:\n${gitDiff}\n\nCommit message:`;
+    const prompt = `Generate a clear, concise git commit message(maximum 15 word) in imperative mood (e.g., "Fix bug" not "Fixed bug") for these changes. Focus on what changed and why, not how. Use conventional commit style if appropriate.\n\nGit diff:\n${gitDiff}\n\n \n . `;
 
     const response = await axios.post(
       provider.url,
