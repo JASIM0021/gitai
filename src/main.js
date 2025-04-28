@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Command } from 'commander';
 import { getCredentials, saveCredentials } from './config/settings.js';
 import {

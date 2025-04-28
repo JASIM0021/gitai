@@ -1,21 +1,28 @@
 {
-  "name": "gitai",
-  "version": "1.0.0",
+  "name": "git-commit-cli-helper",
+  "version": "1.0.1",
   "type": "module",
+  "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
     "commit:fix": "node src/main.js commit --fix-commit",
     "commit:check": "node src/main.js commit --spell-check",
     "commit": "node src/main.js commit --message",
-    "build": "pkg . --targets node18-macos-x64,node18-linux-x64,node18-win-x64 --output dist/gitai"
+    "build": "pkg . --targets node18-macos-x64,node18-linux-x64,node18-win-x64 --output dist/gitai",
+    "postinstall": "chmod +x ./src/main.js"
   },
   "bin": {
     "gitai": "src/main.js"
   },
+  "files": [
+    "src",
+    "bin"
+  ],
   "dependencies": {
     "axios": "^1.9.0",
     "commander": "^11.0.0",
     "dotenv": "^16.5.0",
+    "git-commit-cli-helper": "^1.0.1",
     "inquirer": "^9.3.7",
     "simple-git": "^3.27.0"
   },
@@ -29,5 +36,8 @@
       "node18-win-x64"
     ],
     "outputPath": "dist"
+  },
+  "devDependencies": {
+    "esbuild-plugin-alias": "^0.2.1"
   }
 }
