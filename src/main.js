@@ -137,7 +137,7 @@ async function handleFixCommit(credentials) {
       );
     }
   } catch (error) {
-    console.error(chalk.red('Error fixing commit:'), error);
+    console.error(chalk.red('Error  fixing commit:'), error);
   }
 }
 
