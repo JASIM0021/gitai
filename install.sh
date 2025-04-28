@@ -1,16 +1,19 @@
 #!/bin/bash
 set -e
 
-INSTALL_DIR="/usr/local/bin"
-TARGET="$INSTALL_DIR/gitai"
-DOWNLOAD_URL="https://raw.githubusercontent.com/JASIM0021/gitai/refs/heads/master/dist/gitai.js"
+# Check if Node.js is installed
+if ! command -v node &> /dev/null; then
+    echo "❌ Node.js is not installed. Please install Node.js first."
+    echo "Visit https://nodejs.org/ to download and install Node.js"
+    exit 1
+fi
 
-echo "🌐 Downloading GitAI..."
-curl -fsSL "$DOWNLOAD_URL" -o "$TARGET"
+echo "✅ Node.js is installed"
 
-echo "🛠️  Making it executable..."
-chmod +x "$TARGET"
+# Install the package globally
+echo "📦 Installing GitAI globally..."
+npm install -g git-commit-cli-helper
 
-echo "✅ GitAI installed at $TARGET"
+echo "✅ GitAI installed successfully!"
 echo ""
 echo "👉 You can now run 'gitai' from anywhere!"
