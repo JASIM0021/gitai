@@ -5,13 +5,13 @@
   "main": "src/main.js",
   "description": "GitAI - AI-powered Git assistant that helps write better commit messages and automate Git workflows",
   "author": "SK Jasimuddin (skjasimuddin9064@gmail.com)",
-  "homepage": "https://github.com/yourusername/git-commit-cli-helper",
+  "homepage": "https://github.com/JASIM0021/gitai",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/git-commit-cli-helper.git"
+    "url": "https://github.com/JASIM0021/gitai"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/git-commit-cli-helper/issues"
+    "url": "https://github.com/JASIM0021/gitai/issues"
   },
   "license": "MIT",
   "keywords": [

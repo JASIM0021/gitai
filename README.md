@@ -26,23 +26,27 @@ Supercharge your Git workflow with AI! GitAI helps developers write better commi
 ## 📦 Installation
 
 ### Global Installation (Recommended)
+
 ```bash
 npm install -g gitcliai
 ```
 
 ### Using npx (No Installation)
+
 ```bash
 npx gitcliai <command>
 ```
 
 ### Via cURL (Mac/Linux)
+
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourusername/git-commit-cli-helper/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/JASIM0021/gitai/refs/heads/master/install.sh | bash
 ```
 
 ### Windows (PowerShell)
+
 ```powershell
-irm https://raw.githubusercontent.com/yourusername/git-commit-cli-helper/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/JASIM0021/gitai/refs/heads/master/install.ps1 | iex
 ```
 
 ---
@@ -50,21 +54,25 @@ irm https://raw.githubusercontent.com/yourusername/git-commit-cli-helper/main/in
 ## 🚀 Usage
 
 ### Fix staged changes with AI-generated message
+
 ```bash
 gitai commit --fix-commit
 ```
 
 ### Check and improve a commit message
+
 ```bash
 gitai commit --spell-check "fix login bugg"
 ```
 
 ### Create branch from GitHub issue
+
 ```bash
 gitai checkout -b --issue https://github.com/user/repo/issues/123
 ```
 
 ### Regular Git commands
+
 ```bash
 gitai status
 gitai push
@@ -75,12 +83,12 @@ gitai log --oneline
 
 ## 🛠 Commands
 
-| Command                    | Description                                 |
-|-----------------------------|---------------------------------------------|
-| commit --fix-commit         | Generate commit message from staged changes |
-| commit --spell-check        | Improve an existing commit message          |
-| checkout -b --issue         | Create branch from GitHub issue URL         |
-| [any git command]           | Pass through to standard Git                |
+| Command              | Description                                 |
+| -------------------- | ------------------------------------------- |
+| commit --fix-commit  | Generate commit message from staged changes |
+| commit --spell-check | Improve an existing commit message          |
+| checkout -b --issue  | Create branch from GitHub issue URL         |
+| [any git command]    | Pass through to standard Git                |
 
 ---
 
@@ -107,7 +115,7 @@ We welcome contributions! Here's how to get started:
 Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/git-commit-cli-helper.git
+git clone https://github.com/JASIM0021/gitai
 cd git-commit-cli-helper
 ```
 
