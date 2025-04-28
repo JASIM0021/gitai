@@ -116,7 +116,7 @@ Clone the repo:
 
 ```bash
 git clone https://github.com/JASIM0021/gitai
-cd git-commit-cli-helper
+cd gitai
 ```
 
 Install dependencies:
