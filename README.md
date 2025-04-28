@@ -3,7 +3,7 @@
 Supercharge your Git workflow with AI! GitAI helps developers write better commit messages, automate branch creation, and maintain consistent Git practices.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/git-commit-cli-helper.svg)](https://www.npmjs.com/package/git-commit-cli-helper)
+[![npm version](https://badge.fury.io/js/gitcliai.svg)](https://www.npmjs.com/package/gitcliai)
 
 ---
 
