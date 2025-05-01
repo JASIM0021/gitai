@@ -9,7 +9,9 @@ Supercharge your Git workflow with AI! GitAI helps developers write better commi
 
 ## 🎥 Demo
 
-![GitAI Demo](https://github.com/yourusername/git-commit-cli-helper/raw/main/assets/demo.gif)
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/5d7be3b5-74bc-4a90-9e10-9e005a1ac467" />
+
+
 
 ---
 
