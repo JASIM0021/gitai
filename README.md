@@ -87,9 +87,9 @@ gitai log --oneline
 
 | Command              | Description                                 |
 | -------------------- | ------------------------------------------- |
-| commit --fix-commit  | Generate commit message from staged changes |
-| commit --spell-check | Improve an existing commit message          |
-| checkout -b --issue  | Create branch from GitHub issue URL         |
+| commit --fix-commit (-fc) | Generate commit message from staged changes |
+| commit --spell-check (-sc) | Improve an existing commit message          |
+| checkout -b --issue (-i) | Create branch from GitHub issue URL         |
 | [any git command]    | Pass through to standard Git                |
 
 ---
