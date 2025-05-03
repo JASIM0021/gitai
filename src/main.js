@@ -13,7 +13,7 @@ import fs from 'fs';
 
 const program = new Command();
 
-program.name('gitai').description('AI-powered Git assistant').version('1.0.0');
+program.name('gitai').description('AI-powered Git assistant').version('1.2.5');
 
 // Update commit command handler
 program
